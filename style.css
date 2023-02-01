@@ -1,0 +1,302 @@
+/* font-family: 'Open Sans', sans-serif; Body 400
+font-family: 'Raleway', sans-serif;  Headings, Call-to-actions, Header Navigation  Weights: 400, 700*/
+/* ### Primary
+- Very Dark Blue: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+### Accent
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+### Neutral
+- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%) */
+
+:root {
+  --ff-body: "Open Sans", sans-serif;
+  --ff-rest: "Raleway", sans-serif;
+
+  --fs-200: 0.75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-900: 2.125rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --clr-neutral-100: hsl(0, 0%, 75%);
+  --clr-neutral-200: hsl(240, 75%, 98%);
+
+  --clr-accent-300: hsl(224, 93%, 58%);
+  --clr-accent-400: hsl(170, 45%, 43%);
+
+  --clr-primary-900: hsl(243, 87%, 12%);
+  --clr-primary-600: hsl(238, 22%, 44%);
+
+  --br: 1rem;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form,
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: var(--ff-body);
+  color: var(--clr-primary-900);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 2rem 0 2rem 0;
+}
+
+h1 {
+  line-height: 1.5;
+  font-weight: var(--fw-700);
+  font-size: 2rem;
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-700);
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+footer {
+  background-color: var(--clr-primary-900);
+  color: wheat;
+}
+
+.container {
+  padding: 2rem 2rem;
+}
+
+.button-div2,
+.button-div1 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+button {
+  width: 100%;
+  color: var(--clr-neutral-200);
+  background-color: var(--clr-accent-300);
+  border: none;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px var(--clr-primary-900);
+}
+button:hover {
+  cursor: pointer;
+}
+
+.cta {
+  text-align: center;
+  background-color: var(--clr-primary-600);
+  color: var(--clr-neutral-200);
+}
+
+.quote {
+  background-color: #fff;
+}
+
+.section1 {
+  text-align: center;
+}
+
+.section2 {
+  background-color: var(--clr-neutral-200);
+  margin-top: -4px;
+}
+
+.split {
+  display: grid;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-primary-900);
+  box-shadow: 2px 2px 2px var(--clr-primary-900);
+}
+
+span {
+  display: inline-block;
+  width: 100%;
+}
+
+.fylo-arrow {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.fylo-arrow > a {
+  color: var(--clr-accent-400);
+  border-bottom: 2px solid var(--clr-accent-400);
+}
+
+.fylo-arrow > a:hover {
+  cursor: pointer;
+}
+.quote {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.flex-pic {
+  display: flex;
+  gap: 1rem;
+}
+.flex-pic > p {
+  margin: 0;
+}
+
+.kyle-pic {
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.footer-grid-container > ul {
+  margin: 2rem 0 0 0;
+}
+
+.footer-grid-container > ul * {
+  margin: 1rem 0 0 0;
+}
+
+.social {
+  width: 100px;
+  display: flex;
+  gap: 10px;
+  margin: 3rem auto 0 auto;
+}
+
+@media (min-width: 50rem) {
+  .split {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .content-svg {
+    order: 1;
+  }
+
+  .container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    max-width: 85rem;
+    margin: 0 auto;
+  }
+  .quote {
+    margin: 0;
+    width: 50%;
+  }
+
+  .cta button {
+    width: 50%;
+  }
+  .button-div1 {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .button-div1 {
+    gap: 1rem;
+  }
+  .input-group {
+    flex: 1.5;
+  }
+  .btn1 {
+    flex: 1;
+  }
+  .email1 {
+    flex: 2;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  .fylo-arrow {
+    justify-content: left;
+  }
+  .cta {
+    text-align: left;
+  }
+  .section1 {
+    text-align: left;
+  }
+}
