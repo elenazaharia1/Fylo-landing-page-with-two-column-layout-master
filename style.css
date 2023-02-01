@@ -299,4 +299,7 @@ span {
   .section1 {
     text-align: left;
   }
+  .nav-bar {
+    gap: 5rem;
+  }
 }
