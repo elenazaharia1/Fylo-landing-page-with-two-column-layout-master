@@ -144,7 +144,7 @@ footer {
   margin: 0 auto;
 }
 
-button {
+.get-started {
   width: 100%;
   color: var(--clr-neutral-200);
   background-color: var(--clr-accent-300);
@@ -152,7 +152,7 @@ button {
   padding: 0.5rem;
   box-shadow: 2px 2px 2px var(--clr-primary-900);
 }
-button:hover {
+.get-started:hover {
   cursor: pointer;
 }
 

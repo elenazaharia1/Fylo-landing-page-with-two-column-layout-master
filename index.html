@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -44,20 +45,13 @@
           </p>
           <div class="button-div1">
             <div class="input-group">
-              <label id="label" for="email"></label>
-              <input
-                type="text"
-                class="email email1"
-                name=""
-                id="email"
-                pattern="enter your e-mail"
-                placeholder="enter your e-mail"
-                onkeydown="validation()"
-              />
-              <span id="text"></span>
+              <label for="email">Enter email address</label>
+              <input id="email" type="email" />
+
+              <p id="result"></p>
             </div>
             <div class="btn btn1">
-              <button>Get Started</button>
+              <a class="get-started" href="#">Get Started</a>
             </div>
           </div>
         </div>
@@ -128,20 +122,13 @@
         </div>
         <div class="button-div2">
           <div class="input-group">
-            <label id="label2" for="email"></label>
-            <input
-              type="text"
-              class="email email1"
-              name=""
-              id="email2"
-              pattern="enter your e-mail"
-              placeholder="enter your e-mail"
-              onkeydown="validation2()"
-            />
-            <span id="text2"></span>
+            <label for="email">Enter email address</label>
+            <input id="email" type="email" />
+
+            <p id="result"></p>
           </div>
           <div class="btn btn2">
-            <button>Get Started</button>
+            <a class="get-started" href="#">Get Started</a>
           </div>
         </div>
       </div>
